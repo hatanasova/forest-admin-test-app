@@ -5,4 +5,12 @@ User.create!(
     password_confirmation: "password"
 )
 
+puts 'Create Posts'
+5.times do
+  Post.create!(
+      title: 'Title',
+      body: 'Post body'
+  )
+end
+
 puts 'Seeding completed!'
