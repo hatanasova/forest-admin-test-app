@@ -1,24 +1,14 @@
-# README
+* Requirements 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Node.js
+2. NPM
+3. PostgreSQL
+4. Ruby
+5. Rails
 
-Things you may want to cover:
 
-* Ruby version
+* Steps
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Login to ForestAdmin and connecto to the database
+2. Navigate to forest-admin-app directory
+3. Run: npm start
