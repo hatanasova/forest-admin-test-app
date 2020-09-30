@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: forest_admin_app
+    environment:
+      - APPLICATION_PORT=3310
+      - DATABASE_URL=postgres://host.docker.internal:5432/forest_admin_app_development
+      - DATABASE_SCHEMA=public
+      - DATABASE_SSL=false
+      - FOREST_AUTH_SECRET=04e7380b07464318ea9c0dd031e3658e2bb127d9d75a8416e15fbcb70d12630b4e9062815232678cdcc962a8a4594efc
+      - FOREST_ENV_SECRET=de18bca7fc35d4067054425bc66d4c0e03cb18f6061b711d95755c5676c363d9
+    ports:
+      - "3310:3310"
+    volumes:
+      - ./:/usr/src/app
